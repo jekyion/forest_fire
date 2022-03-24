@@ -140,7 +140,7 @@ class Simulation:
             z = 0
             for y in pozycje:
                 for x in self.forest_area.sectors_on_fire:
-                    print("odległosc wozu w sektorze: ", pozycje[z], "od pozaru w sektorze:", x, "wynosi:", self.forest_area.get_sector_distance(x, pozycje[z]) )
+                    # print("odległosc wozu w sektorze: ", pozycje[z], "od pozaru w sektorze:", x, "wynosi:", self.forest_area.get_sector_distance(x, pozycje[z]) )
                     firefightersSectorsDistance.append( (pozycje[z], x, round(self.forest_area.get_sector_distance(x, pozycje[z]), 2)))
                 firefightersSectorsDistance.append((''))
                 if (z < self.firefighters_limit):

@@ -144,7 +144,7 @@ class Csv_writer:
         figure = plt.figure()
         plt.plot(iteracje, self.sectors_on_fire)
         plt.xlabel('Iteracje')
-        plt.title('Palące się sektorów względem czasu')
+        plt.title('Ilość palących się sektorów względem czasu')
         plt.ylabel('Aktualnie palące się sektory')
         plt.savefig('.\graphs\sectors_on_fire')
         plt.close(figure)
